@@ -125,10 +125,13 @@ button[disabled] {
 }
 
 .checkboxes {
+  margin: 1rem 0;
+}
+
+.checkboxes, .half-checkboxes {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
-  margin: 1rem 0;
 }
 
 .length {
@@ -168,11 +171,45 @@ button[disabled] {
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
-    margin: 16px 0px 0px 0px;
+    margin: 16px 0px 16px 0px;
     padding: 10px 15px;
   }
 
   #password, label, #length {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .checkboxes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .length {
+    flex-wrap: wrap;
+    max-width: 200px;
+    justify-content: center;
+  }
+  #length {
+    order: 2;
+    margin-left: 1rem;
+    position: relative;
+    left: 2rem;
+  }
+  #lengthRange {
+    order: 3;
+    margin-top: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #password, label, #length {
+    font-size: 0.8rem;
   }
 }
