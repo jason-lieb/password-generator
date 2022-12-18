@@ -10,5 +10,20 @@ function writePassword() {
 
 }
 
+// Generate password
+function generatePassword() {
+  return 'password';
+}
+
+// Error function for no selected character types -> Alert user
+function handleError() {
+
+}
+
+// Function to add copy text button to textarea
+function addCopyButton() {
+
+}
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
