@@ -107,7 +107,7 @@ button[disabled] {
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 85px;
   font-size: 1.2rem;
   text-align: center;
   margin-top: 10px;
@@ -120,6 +120,8 @@ button[disabled] {
 
 #copy {
   display: none;
+  position: relative;
+  top: -3rem;
   margin: 0 auto 0.5rem;
   font-size: 1rem;
   padding: 0.5rem 1rem;

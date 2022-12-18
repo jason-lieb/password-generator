@@ -6,10 +6,12 @@ let lowercase = document.querySelector('#lowercase');
 let uppercase = document.querySelector('#uppercase');
 let numbers = document.querySelector('#numbers');
 let specialCharacters = document.querySelector('#special-characters');
-let copy = document.querySelector('#copy');
+let copyBtn = document.querySelector('#copy');
+let passwordBlock = document.querySelector('#password');
 
-// Add event listener to generate button
+// Add event listener to buttons
 generateBtn.addEventListener("click", writePassword);
+copyBtn.addEventListener("click", copyPassword)
 
 // Write password to the #password input
 function writePassword() {
@@ -31,7 +33,8 @@ function generatePassword() {
     let asciiCode = Math.floor(Math.random() * asciiCodes.length);
     password.push(String.fromCharCode(asciiCodes[asciiCode]));
   }
-  copy.style.display = 'block';
+  copyBtn.style.display = 'block';
+  passwordBlock.style.marginBottom = '-36px';
   return password.join('');
 }
 
@@ -68,6 +71,6 @@ function generateAsciiCodes() {
 }
 
 // Function to add copy text button to textarea
-function addCopyButton() {
-
+function copyPassword() {
+  
 }
