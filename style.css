@@ -125,6 +125,29 @@ button[disabled] {
   height: 4rem;
 }
 
+.length {
+  display: flex;
+  align-items: center;
+}
+
+#length {
+  width: 3rem;
+  margin-left: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #696969;
+}
+
+#lengthRange {
+  margin-left: 1rem;
+  opacity: 0.7;
+}
+
+#lengthRange:hover {
+  opacity: 1;
+}
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
