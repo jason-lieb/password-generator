@@ -58,7 +58,7 @@ header {
   text-align: center;
 }
 
-.card-footer::before {
+.card-body::after, .card-footer::before {
   content: " ";
   display: block;
   width: 100%;
@@ -116,6 +116,13 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+}
+
+.parameters {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 4rem;
 }
 
 @media (max-width: 690px) {
