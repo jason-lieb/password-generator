@@ -11,7 +11,6 @@ let passwordBlock = document.querySelector('#password');
 
 // Add event listener to buttons
 generateBtn.addEventListener("click", writePassword);
-copyBtn.addEventListener("click", copyPassword)
 
 // Write password to the #password input
 function writePassword() {
@@ -72,5 +71,5 @@ function generateAsciiCodes() {
 
 // Function to add copy text button to textarea
 function copyPassword() {
-  
+  navigator.clipboard.writeText(passwordText.value);
 }
