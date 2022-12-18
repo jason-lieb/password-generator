@@ -39,7 +39,7 @@ header {
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
-  padding: 30px 40px;
+  padding: 30px 40px 0px 40px;
 }
 
 .card-header::after {
@@ -82,7 +82,7 @@ header {
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
-  margin: 16px 16px 16px 20px;
+  margin: 24px 16px 24px 20px;
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
