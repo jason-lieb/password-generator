@@ -6,6 +6,7 @@ let lowercase = document.querySelector('#lowercase');
 let uppercase = document.querySelector('#uppercase');
 let numbers = document.querySelector('#numbers');
 let specialCharacters = document.querySelector('#special-characters');
+let copy = document.querySelector('#copy');
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
@@ -30,10 +31,11 @@ function generatePassword() {
     let asciiCode = Math.floor(Math.random() * asciiCodes.length);
     password.push(String.fromCharCode(asciiCodes[asciiCode]));
   }
+  copy.style.display = 'block';
   return password.join('');
 }
 
-// Error function for no selected character types -> Alert user
+// Error function for no selected character types
 function handleError() {
   alert('You must select a character type');
 }
