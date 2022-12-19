@@ -119,9 +119,7 @@ button[disabled] {
 }
 
 #copy {
-  display: none;
-  position: relative;
-  top: -3rem;
+  display: block;
   margin: 0 auto 0.5rem;
   font-size: 1rem;
   padding: 0.5rem 1rem;

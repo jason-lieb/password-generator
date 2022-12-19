@@ -7,7 +7,6 @@ let uppercase = document.querySelector('#uppercase');
 let numbers = document.querySelector('#numbers');
 let specialCharacters = document.querySelector('#special-characters');
 let copyBtn = document.querySelector('#copy');
-let passwordBlock = document.querySelector('#password');
 
 // Add event listener to buttons
 generateBtn.addEventListener("click", writePassword);
@@ -32,8 +31,7 @@ function generatePassword() {
     let asciiCode = Math.floor(Math.random() * asciiCodes.length);
     password.push(String.fromCharCode(asciiCodes[asciiCode]));
   }
-  copyBtn.style.display = 'block';
-  passwordBlock.style.marginBottom = '-36px';
+  copyBtn.disabled = false;
   return password.join('');
 }
 
